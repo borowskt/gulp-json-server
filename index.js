@@ -59,7 +59,7 @@ var GulpJsonServer = function(options){
 			router.db._.id = this.options.id;
 		}
 
-		server.use(bodyParser.json());
+		server.use(bodyParser);
 
 		this.server = server;
 		this.router = router;
